@@ -1,5 +1,5 @@
 html {
-  font-family: Georgia;
+  font-family: Georgia, serif;
   color: #fff;
 }
 
@@ -7,30 +7,40 @@ img {
   width: 100%;
 }
 
+.image {
+  max-height: 500px;
+}
+
 .banner {
-  background-color: rgba(73, 85, 98, .9);
+  background-color: #495562;
 }
 
 .btn {
   border-color: #97a49b;
-  color: #fff;
+  color: #efefef;
   text-align: left;
 }
 
-p {
-  max-width: 500px;
-}
-
-
 @media only screen and (min-width: 38em) {
 
-  a {
-    text-align: right;
+  .btn {
+    float: right;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  img {
+    z-index: 1;
+  }
+
+  .btn {
+    border-color: #fff;
   }
 
   .banner {
     position: relative;
-    background: linear-gradient(to top, rgba(73, 85, 98, .9), rgba(16, 52, 41, 0))
   }
 
   .banner-content {
@@ -38,6 +48,7 @@ p {
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
+    background-image: linear-gradient(to top, rgba(73, 85, 98, .9), rgba(73, 85, 98, .1));
   }
 
 }
