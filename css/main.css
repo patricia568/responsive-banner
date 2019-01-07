@@ -1,7 +1,43 @@
 html {
   font-family: Georgia;
+  color: #fff;
 }
 
 img {
   width: 100%;
+}
+
+.banner {
+  background-color: rgba(73, 85, 98, .9);
+}
+
+.btn {
+  border-color: #97a49b;
+  color: #fff;
+  text-align: left;
+}
+
+p {
+  max-width: 500px;
+}
+
+
+@media only screen and (min-width: 38em) {
+
+  a {
+    text-align: right;
+  }
+
+  .banner {
+    position: relative;
+    background: linear-gradient(to top, rgba(73, 85, 98, .9), rgba(16, 52, 41, 0))
+  }
+
+  .banner-content {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
 }
